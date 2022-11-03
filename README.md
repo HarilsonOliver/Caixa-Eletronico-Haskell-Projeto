@@ -1,6 +1,5 @@
 # Caixa-Eletronico-Haskell-Projeto
-Aplicativo de caixa eletrônico feito em Haskell
-Uma simulador de caixa automático simples.
+Aplicação que simula caixa eletrônico feito em Haskell.
 
 Funcionalidades:
 
