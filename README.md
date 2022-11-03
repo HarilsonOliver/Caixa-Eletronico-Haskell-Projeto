@@ -10,4 +10,5 @@ Funcionalidades:
 Como Funciona:
 
   Primeiro compile: ghc Projeto.hs.
+  
   Depois execute o comando: ./Projeto.
