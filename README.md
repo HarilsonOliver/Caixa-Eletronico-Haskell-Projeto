@@ -3,9 +3,11 @@ Aplicação que simula caixa eletrônico feito em Haskell.
 
 Funcionalidades:
 
-Consultar Saldo
-Deposito & Saque
+  Consultar Saldo.
+
+  Deposito & Saque.
 
 Como Funciona:
-Primeiro compile: ghc Projeto.hs
-Depois execute o comando: ./Projeto
+
+  Primeiro compile: ghc Projeto.hs.
+  Depois execute o comando: ./Projeto.
