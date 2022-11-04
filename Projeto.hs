@@ -29,7 +29,7 @@ op <- readLn;
         do {putStrLn "Informe o valor do Depósito: ";
         numero <- getLine;
         contentC <- readFile conta;
-        writeFile auxiliar (show (deposito (read contentC::Int) (read numero::Int)));
+        writeFile auxiliar (show (deposito (read contentC::Double) (read numero::Double)));
         content2 <- readFile auxiliar;
         writeFile conta content2;
         putStrLn "Depósito Efetuado!";
@@ -39,8 +39,8 @@ op <- readLn;
         do {putStrLn "Informe o valor do Saque: ";
         numero <- getLine;
         contentC <- readFile conta;
-        if (read contentC::Int) < (read numero::Int) then do putStrLn "Valor do saque excede valor em Conta.";putStrLn "Saldo em Conta é de: "; contents <- readFile conta; putStrLn ("R$ " ++ show contents); putStrLn " ";
-        else do {writeFile auxiliar (show (saque (read contentC::Int) (read numero::Int))); putStrLn "Saque Efetuado!"; putStrLn " " };
+        if (read contentC::Double) < (read numero::Double) then do putStrLn "Valor do saque excede valor em Conta.";putStrLn "Saldo em Conta é de: "; contents <- readFile conta; putStrLn ("R$ " ++ show contents); putStrLn " ";
+        else do {writeFile auxiliar (show (saque (read contentC::Double) (read numero::Double))); putStrLn "Saque Efetuado!"; putStrLn " " };
         content2 <- readFile auxiliar;
         writeFile conta content2;}
       else if op == 4 
